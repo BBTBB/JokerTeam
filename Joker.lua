@@ -3,8 +3,8 @@
 --   This Is The Source Channel @BBTBB .   --
 --                - JokerTeam -                 --
 --        -- https://t.me/BBTBB --         --
------------------------------------------------- 
-DevAbs = redis.connect('127.0.0.1', 6379) 
+------------------------------------------------  
+DevAbs  = dofile("./redis.lua").connect("127.0.0.1", 6379)
 serpent = require("serpent") 
 JSON = dofile('./dkjson.lua') 
 json = dofile('./JSON.lua') 
